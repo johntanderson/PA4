@@ -1,0 +1,59 @@
+Loading DC.len...
+Graph size: numVertices = 9559; numEdges = 29818
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 74
+Avg time is 0.001432 secs
+
+Loading RI.len...
+Graph size: numVertices = 53658; numEdges = 138426
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 3827
+Avg time is 0.005504 secs
+
+Loading VT.len...
+Graph size: numVertices = 97975; numEdges = 215116
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 6894
+Avg time is 0.01056 secs
+
+Loading SD.len...
+Graph size: numVertices = 212313; numEdges = 519244
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 13594
+Avg time is 0.0307 secs
+
+Loading MA.len...
+Graph size: numVertices = 308401; numEdges = 770328
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 19870
+Avg time is 0.052968 secs
+
+Loading WI.len...
+Graph size: numVertices = 519157; numEdges = 1270872
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 12702
+Avg time is 0.10168 secs
+
+Loading IL.len...
+Graph size: numVertices = 793336; numEdges = 2025634
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 2897
+Avg time is 0.169684 secs
+
+Loading FL.len...
+Graph size: numVertices = 1048506; numEdges = 2661102
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 11859
+Avg time is 0.211412 secs
+
+Loading CA.len...
+Graph size: numVertices = 1613325; numEdges = 3978298
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 30512
+Avg time is 0.329264 secs
+
+Loading TX.len...
+Graph size: numVertices = 2073870; numEdges = 5168318
+Running Dijkstra for 250 sources
+Avg no. of unreachable vertices is 53011
+Avg time is 0.453956 secs

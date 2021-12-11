@@ -1,0 +1,185 @@
+****************** Bellman-Ford ******************
+
+*** Graph 1 ***
+
+Distances from v0: [0, 2, 7, 4, -2]
+Distances from v1: [-2, 0, 5, 2, -4]
+Distances from v2: [-7, -5, 0, -3, -9]
+Distances from v3: [-4, -2, 3, 0, -6]
+Distances from v4: [2, 4, 9, 6, 0]
+
+*** Graph 2 ***
+
+Has a negative cycle.
+
+*** Graph 3 ***
+
+Distances from v0: [0, inf, inf, inf, inf, inf]
+Distances from v1: [-1, 0, inf, inf, inf, inf]
+Distances from v2: [0, 1, 0, inf, inf, inf]
+Distances from v3: [-10, -9, -10, 0, inf, inf]
+Distances from v4: [-15, -14, -15, -5, 0, inf]
+Distances from v5: [-16, -15, -16, -6, -1, 0]
+
+****************** Dijkstra ******************
+
+*** Graph 1 ***
+
+Distance array (from v0): [0, 10, 10, 3, 5, inf, 10]
+Distance array (from v1): [17, 0, 0, 5, 7, inf, 12]
+Distance array (from v2): [17, 27, 0, 20, 22, inf, 27]
+Distance array (from v3): [34, 44, 17, 0, 2, inf, 7]
+Distance array (from v4): [inf, inf, inf, inf, 0, inf, inf]
+Distance array (from v5): [inf, inf, inf, inf, 3, 0, 2]
+Distance array (from v6): [inf, inf, inf, inf, inf, inf, 0]
+
+*** Graph 2 ***
+
+Distance array (from v0): [0, 10, 10, 12, 1, 8, 19]
+Distance array (from v1): [5, 0, 0, 2, 6, 11, 9]
+Distance array (from v2): [5, 15, 0, 2, 6, 11, 9]
+Distance array (from v3): [3, 13, 13, 0, 4, 9, 7]
+Distance array (from v4): [inf, inf, inf, inf, 0, 7, inf]
+Distance array (from v5): [inf, inf, inf, inf, inf, 0, inf]
+Distance array (from v6): [inf, inf, inf, inf, inf, 2, 0]
+
+****************** APSP algorithms ******************
+
+*** Graph 1 Distance Matrix (using Johnson) ***
+
+[0, 2, 7, 4, -2]
+[-2, 0, 5, 2, -4]
+[-7, -5, 0, -3, -9]
+[-4, -2, 3, 0, -6]
+[2, 4, 9, 6, 0]
+
+*** Graph 1 Distance Matrix (using Floyd-Warshall) ***
+
+[0, 2, 7, 4, -2]
+[-2, 0, 5, 2, -4]
+[-7, -5, 0, -3, -9]
+[-4, -2, 3, 0, -6]
+[2, 4, 9, 6, 0]
+
+*** Graph 2 Distance Matrix (using Johnson) ***
+
+[0, -1, -1, 8, -2, 0]
+[12, 0, 0, 15, 5, 7]
+[12, 6, 0, 15, 5, 7]
+[-3, -9, -9, 0, -10, -8]
+[7, 6, 6, 15, 0, 7]
+[5, 4, 4, 13, -2, 0]
+
+*** Graph 2 Distance Matrix (using Floyd-Warshall) ***
+
+[0, -1, -1, 8, -2, 0]
+[12, 0, 0, 15, 5, 7]
+[12, 6, 0, 15, 5, 7]
+[-3, -9, -9, 0, -10, -8]
+[7, 6, 6, 15, 0, 7]
+[5, 4, 4, 13, -2, 0]
+
+*** Graph 3 ***
+
+Has a negative cycle.
+
+****************** DJP ******************
+
+MST has weight 37
+The edges are: [<0, 1, 4>, <5, 2, 4>, <2, 3, 7>, <3, 4, 9>, <6, 5, 2>, <7, 6, 1>, <0, 7, 8>, <2, 8, 2>]
+
+****************** Union Find ******************
+
+Initial sets are 0-15
+
+UNION(0,1)
+UNION(4,5)
+UNION(8,9)
+UNION(12,13)
+
+List containing  0: [0, 1]
+List containing  1: [0, 1]
+List containing  2: [2]
+List containing  3: [3]
+List containing  4: [4, 5]
+List containing  5: [4, 5]
+List containing  6: [6]
+List containing  7: [7]
+List containing  8: [8, 9]
+List containing  9: [8, 9]
+List containing 10: [10]
+List containing 11: [11]
+List containing 12: [12, 13]
+List containing 13: [12, 13]
+List containing 14: [14]
+List containing 15: [15]
+
+UNION(0,5)
+UNION(10,12)
+UNION(0,10)
+
+List containing  0: [0, 1, 5, 4, 10, 13, 12]
+List containing  1: [0, 1, 5, 4, 10, 13, 12]
+List containing  2: [2]
+List containing  3: [3]
+List containing  4: [0, 1, 5, 4, 10, 13, 12]
+List containing  5: [0, 1, 5, 4, 10, 13, 12]
+List containing  6: [6]
+List containing  7: [7]
+List containing  8: [8, 9]
+List containing  9: [8, 9]
+List containing 10: [0, 1, 5, 4, 10, 13, 12]
+List containing 11: [11]
+List containing 12: [0, 1, 5, 4, 10, 13, 12]
+List containing 13: [0, 1, 5, 4, 10, 13, 12]
+List containing 14: [14]
+List containing 15: [15]
+
+UNION(6,8)
+UNION(8,5)
+
+List containing  0: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing  1: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing  2: [2]
+List containing  3: [3]
+List containing  4: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing  5: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing  6: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing  7: [7]
+List containing  8: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing  9: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing 10: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing 11: [11]
+List containing 12: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing 13: [0, 1, 5, 4, 10, 13, 12, 6, 9, 8]
+List containing 14: [14]
+List containing 15: [15]
+
+****************** Kruskal ******************
+
+MST has weight 37
+The edges are: [<6, 7, 1>, <2, 8, 2>, <5, 6, 2>, <0, 1, 4>, <2, 5, 4>, <2, 3, 7>, <0, 7, 8>, <3, 4, 9>]
+
+****************** KMP ******************
+
+*** Text is AABAACAADAABAABAACAADAAD *** 
+
+Pattern AABA    has 3 occurrence(s): [0, 9, 12]
+Pattern AABAA   has 3 occurrence(s): [0, 9, 12]
+Pattern ABA     has 3 occurrence(s): [1, 10, 13]
+Pattern CA      has 2 occurrence(s): [5, 17]
+Pattern EF      has 0 occurrence(s): []
+Pattern AAC     has 2 occurrence(s): [3, 15]
+Pattern AAD     has 3 occurrence(s): [6, 18, 21]
+
+*** Text is MISSISSIPPILY_OR_MISSISSIPPILESSLY *** 
+
+Pattern ISS     has 4 occurrence(s): [1, 4, 18, 21]
+Pattern ESS     has 1 occurrence(s): [29]
+Pattern _       has 2 occurrence(s): [13, 16]
+Pattern IPP     has 2 occurrence(s): [7, 24]
+Pattern MISS    has 2 occurrence(s): [0, 17]
+Pattern LESSLY  has 1 occurrence(s): [28]
+Pattern LY      has 2 occurrence(s): [11, 32]
+Pattern LESSLIE has 0 occurrence(s): []
+
