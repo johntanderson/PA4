@@ -12,7 +12,7 @@ public class Dijkstra extends Graph {
 			distance[i] = Integer.MAX_VALUE;
 			closed[i] = false;
 		}
- 
+
 		distance[source] = 0;
 		PriorityQueue<PriorityQueueElement> open = new PriorityQueue<>(new PriorityQueueElementComparator());
 
