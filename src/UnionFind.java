@@ -25,9 +25,8 @@ public class UnionFind {
 
 	private void append(ArrayList<Integer> arg1, ArrayList<Integer> arg2) { // complete this function
 		if (arg2.size()!=0){
-			int x = arg2.remove(arg2.size()-1);
-			representatives.set(x, arg1);
-			arg1.add(x);
+			arg1.addAll(arg2);
+			for (Integer n:arg2) representatives.set(n, arg1);
 		}
 	}
 
