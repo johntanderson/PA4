@@ -22,7 +22,6 @@ public class DJP extends Graph {
 		}
 		label[source] = 0;
 		open.add(new PriorityQueueElement(source, 0));
-
 		while (open.size() > 0) {
 			int U = open.poll().item;
 			for (Edge e: adjList.get(U)) {
